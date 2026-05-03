@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Task Manager Dashboard</h1>
+
+<h3 id="roleText"></h3>
+
+<!-- CREATE PROJECT -->
+<div class="card" id="projectSection">
+    <h3>Create Project</h3>
+    <input id="projectName" placeholder="Project Name">
+    <button onclick="createProject()">Create</button>
+</div>
+
+<!-- CREATE TASK -->
+<div class="card">
+    <h3>Create Task</h3>
+
+    <input id="title" placeholder="Task Title"><br>
+
+    <!-- ✅ FIXED LABEL -->
+    <label for="projectDropdown">Select Project:</label><br>
+    <select id="projectDropdown">
+        <option value="">Loading projects...</option>
+    </select><br>
+
+    <input id="assignEmail" placeholder="Assign Email"><br>
+
+    <button onclick="createTask()">Create Task</button>
+</div>
+
+<!-- DASHBOARD -->
+<div class="card">
+    <h3>Dashboard</h3>
+
+    <!-- ✅ FIXED LABEL -->
+    <label for="dashProjectDropdown">Select Project:</label><br>
+    <select id="dashProjectDropdown">
+        <option value="">Loading projects...</option>
+    </select><br>
+
+    <button onclick="loadDashboard()">Load</button>
+
+    <div id="dashboardBox"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
