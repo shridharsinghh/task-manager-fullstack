@@ -139,16 +139,7 @@ http://127.0.0.1:5500
 * Improve UI using React / Tailwind
 * Add notifications and comments on tasks
 
----
 
-## 🌐 Live Demo
-
-(Will be added after deployment)
-
-Frontend: https://your-app.netlify.app
-Backend: https://your-app.railway.app
-
----
 
 
 ---
